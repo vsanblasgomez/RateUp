@@ -1,0 +1,20 @@
+# Local/generated ad batches that are not needed for the landing page deploy.
+anuncios/
+productos/
+nuevos_anuncios/
+nuevos_anuncios_realistas/
+assets/transparent/*.png
+nuevos_anuncios_estilo_referencia/**
+
+# Contact sheets and planning/export files.
+_contact_sheet_*.jpg
+copys_publicaciones.txt
+inventario_archivos.txt
+LOGO.png
+PROFILE_LOGO.png
+profile_logo_white.png
+
+# Keep the landing hero background image explicitly tracked.
+!nuevos_anuncios_estilo_referencia/
+!nuevos_anuncios_estilo_referencia/generados/
+!nuevos_anuncios_estilo_referencia/generados/estilo_01_puerta_entran_clientes_salen_hablando.png
