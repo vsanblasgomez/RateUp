@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Fade Club Barberia">
+  <rect width="160" height="160" rx="34" fill="#070b08"/>
+  <rect x="20" y="20" width="120" height="120" rx="30" fill="#00df38"/>
+  <path d="M51 50h58v17H51V50Zm0 28h48v17H51V78Zm0 28h35v17H51v-17Z" fill="#061006"/>
+  <path d="M105 101 126 80M105 80l21 21" stroke="#061006" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="101" cy="77" r="8" fill="#f4f7f4"/>
+  <circle cx="101" cy="104" r="8" fill="#f4f7f4"/>
+</svg>

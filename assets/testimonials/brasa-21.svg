@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Restaurante Brasa 21">
+  <rect width="160" height="160" rx="34" fill="#0e0805"/>
+  <rect x="20" y="20" width="120" height="120" rx="30" fill="url(#g)"/>
+  <path d="M83 39c7 18-11 22-4 38 3-10 13-16 22-22-1 19 20 27 20 49 0 18-15 31-40 31s-40-13-40-31c0-24 28-35 42-65Z" fill="#061006"/>
+  <path d="M72 111c0-12 9-21 17-31 2 13 15 17 15 31 0 10-7 17-16 17s-16-7-16-17Z" fill="#ffd166"/>
+  <path d="M43 48v54M55 48v54M67 48v54M43 70h24" stroke="#f8fff9" stroke-width="7" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff7a1a"/>
+      <stop offset="1" stop-color="#00df38"/>
+    </linearGradient>
+  </defs>
+</svg>

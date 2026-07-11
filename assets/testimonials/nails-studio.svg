@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Nails Studio">
-  <rect width="160" height="160" rx="34" fill="#111014"/>
-  <path d="M24 42c0-13 10-23 23-23h66c13 0 23 10 23 23v76c0 13-10 23-23 23H47c-13 0-23-10-23-23V42Z" fill="url(#g)"/>
-  <path d="M51 105V55h15l28 27V55h17v50H96L68 78v27H51Z" fill="#13060d"/>
-  <path d="M52 121c18 8 38 8 56 0" stroke="#13060d" stroke-width="7" stroke-linecap="round"/>
+  <rect width="160" height="160" rx="34" fill="#120711"/>
+  <rect x="20" y="20" width="120" height="120" rx="30" fill="url(#g)"/>
+  <path d="M51 91c0-25 13-46 29-46s29 21 29 46c0 18-12 30-29 30S51 109 51 91Z" fill="#f8fff9"/>
+  <path d="M62 91c0-18 8-34 18-34s18 16 18 34c0 12-7 20-18 20s-18-8-18-20Z" fill="#f13b92"/>
+  <path d="M55 123c15 9 35 9 50 0" stroke="#1a0610" stroke-width="8" stroke-linecap="round"/>
   <defs>
-    <linearGradient id="g" x1="24" y1="19" x2="136" y2="141" gradientUnits="userSpaceOnUse">
+    <linearGradient id="g" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
       <stop stop-color="#f13b92"/>
       <stop offset="1" stop-color="#ff9b52"/>
     </linearGradient>

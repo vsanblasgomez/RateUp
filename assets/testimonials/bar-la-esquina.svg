@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Bar La Esquina">
-  <rect width="160" height="160" rx="34" fill="#08110b"/>
-  <rect x="18" y="18" width="124" height="124" rx="28" fill="#00df38"/>
-  <path d="M49 104V49h34c12 0 20 6 20 15 0 6-3 11-9 14 8 2 13 8 13 16 0 10-9 17-22 17H49Zm17-34h15c4 0 7-2 7-6s-3-6-7-6H66v12Zm0 27h17c5 0 8-3 8-7s-3-7-8-7H66v14Z" fill="#051006"/>
-  <circle cx="119" cy="119" r="12" fill="#051006"/>
+  <rect width="160" height="160" rx="34" fill="#07110b"/>
+  <rect x="18" y="18" width="124" height="124" rx="30" fill="#00df38"/>
+  <path d="M54 62c0-12 10-22 26-22s26 10 26 22v11c0 19-10 34-26 34S54 92 54 73V62Z" fill="#07110b"/>
+  <path d="M66 62c0-6 5-10 14-10s14 4 14 10v10H66V62Z" fill="#f4f7f4"/>
+  <path d="M47 72h66" stroke="#f4f7f4" stroke-width="10" stroke-linecap="round"/>
+  <path d="M65 112h30" stroke="#07110b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M80 107v20" stroke="#07110b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M58 128h44" stroke="#07110b" stroke-width="10" stroke-linecap="round"/>
 </svg>
