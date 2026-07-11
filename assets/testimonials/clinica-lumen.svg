@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Clinica Lumen">
-  <rect width="160" height="160" rx="34" fill="#08110b"/>
-  <rect x="18" y="18" width="124" height="124" rx="30" fill="#00df38"/>
-  <path d="M80 44c25 0 44 22 52 36-8 14-27 36-52 36S36 94 28 80c8-14 27-36 52-36Z" fill="#f8fff9"/>
-  <circle cx="80" cy="80" r="22" fill="#061006"/>
-  <circle cx="80" cy="80" r="10" fill="#00df38"/>
-  <path d="M80 32v20M80 108v20M48 80H28M132 80h-20" stroke="#061006" stroke-width="7" stroke-linecap="round"/>
-  <path d="M100 52 113 39" stroke="#f8fff9" stroke-width="7" stroke-linecap="round"/>
-</svg>
