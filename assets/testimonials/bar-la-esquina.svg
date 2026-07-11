@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Bar La Esquina">
+  <rect width="160" height="160" rx="34" fill="#08110b"/>
+  <rect x="18" y="18" width="124" height="124" rx="28" fill="#00df38"/>
+  <path d="M49 104V49h34c12 0 20 6 20 15 0 6-3 11-9 14 8 2 13 8 13 16 0 10-9 17-22 17H49Zm17-34h15c4 0 7-2 7-6s-3-6-7-6H66v12Zm0 27h17c5 0 8-3 8-7s-3-7-8-7H66v14Z" fill="#051006"/>
+  <circle cx="119" cy="119" r="12" fill="#051006"/>
+</svg>
