@@ -291,6 +291,7 @@ h2 span {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
   padding: clamp(4rem, 8vw, 7rem) 0;
+  scroll-margin-top: 5.5rem;
 }
 
 .section-heading {
@@ -573,6 +574,192 @@ h3 {
   .testimonial-track {
     animation: none;
   }
+}
+
+.impact {
+  width: min(1240px, calc(100% - 2rem));
+}
+
+.impact-copy {
+  max-width: 860px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.impact-copy p:not(.eyebrow) {
+  max-width: 720px;
+  margin-inline: auto;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.impact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.55fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.comparison-slider {
+  --position: 54%;
+  position: relative;
+  min-height: clamp(24rem, 54vw, 41rem);
+  overflow: hidden;
+  border: 1px solid rgba(0, 223, 56, 0.24);
+  border-radius: 0.75rem;
+  background: #080b09;
+  box-shadow: var(--shadow);
+  isolation: isolate;
+}
+
+.comparison-slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(4, 8, 5, 0.18), transparent 28%, rgba(4, 8, 5, 0.24)),
+    radial-gradient(circle at 52% 48%, transparent 0 18rem, rgba(0, 0, 0, 0.12) 36rem);
+}
+
+.comparison-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+}
+
+.comparison-slider > .comparison-image,
+.comparison-after {
+  position: absolute;
+  inset: 0;
+}
+
+.comparison-after {
+  z-index: 2;
+  overflow: hidden;
+  clip-path: inset(0 calc(100% - var(--position)) 0 0);
+}
+
+.comparison-label {
+  position: absolute;
+  z-index: 6;
+  top: 1rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(6, 10, 8, 0.74);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.comparison-label-before {
+  left: 1rem;
+}
+
+.comparison-label-after {
+  right: 1rem;
+  border-color: rgba(0, 223, 56, 0.42);
+  color: var(--green);
+}
+
+.comparison-line {
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  bottom: 0;
+  left: var(--position);
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--green);
+  box-shadow: 0 0 26px rgba(0, 223, 56, 0.78);
+  pointer-events: none;
+}
+
+.comparison-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 3.2rem;
+  height: 3.2rem;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--green);
+  border-radius: 999px;
+  background: rgba(3, 16, 4, 0.94);
+  box-shadow:
+    0 0 0 0.48rem rgba(0, 223, 56, 0.12),
+    0 0 34px rgba(0, 223, 56, 0.45);
+}
+
+.comparison-handle::before,
+.comparison-handle::after {
+  content: "";
+  width: 0.62rem;
+  height: 0.62rem;
+  border-top: 3px solid var(--green);
+  border-left: 3px solid var(--green);
+}
+
+.comparison-handle::before {
+  transform: translateX(0.2rem) rotate(-45deg);
+}
+
+.comparison-handle::after {
+  transform: translateX(-0.2rem) rotate(135deg);
+}
+
+.comparison-range {
+  position: absolute;
+  z-index: 8;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+}
+
+.impact-benefits {
+  display: grid;
+  gap: 1rem;
+}
+
+.impact-benefits article {
+  min-height: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(0, 223, 56, 0.16), transparent 11rem),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035));
+  box-shadow: var(--shadow);
+}
+
+.impact-benefits span {
+  display: inline-flex;
+  margin-bottom: 2.2rem;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.impact-benefits h3 {
+  margin-bottom: 0.65rem;
+}
+
+.impact-benefits p {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.58;
 }
 
 .product-grid {
@@ -1151,6 +1338,7 @@ h3 {
 
   .proof-grid,
   .testimonial-columns,
+  .impact-layout,
   .product-grid,
   .offer-grid,
   .workflow,
@@ -1175,6 +1363,10 @@ h3 {
 
   .testimonial-column-fast {
     display: none;
+  }
+
+  .impact-benefits {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -1302,6 +1494,42 @@ h3 {
   .testimonial-card {
     min-height: auto;
     margin-bottom: 1rem;
+  }
+
+  .impact-copy {
+    text-align: left;
+  }
+
+  .comparison-slider {
+    min-height: 18.5rem;
+    border-radius: 0.65rem;
+  }
+
+  .comparison-label {
+    top: 0.75rem;
+    padding: 0.45rem 0.62rem;
+    font-size: 0.64rem;
+  }
+
+  .comparison-label-before {
+    left: 0.75rem;
+  }
+
+  .comparison-label-after {
+    right: 0.75rem;
+  }
+
+  .comparison-handle {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+
+  .impact-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-benefits span {
+    margin-bottom: 1.1rem;
   }
 
   .offer-card {

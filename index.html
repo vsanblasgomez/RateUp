@@ -29,6 +29,7 @@
         <a href="#ofertas">Ofertas</a>
         <a href="#beneficios">Beneficios</a>
         <a href="#resenas">Rese&ntilde;as</a>
+        <a href="#impacto">Impacto</a>
         <a href="#funciona">Como funciona</a>
         <a href="#contacto-popup">Contacto</a>
       </nav>
@@ -383,6 +384,68 @@
         </div>
       </section>
 
+      <section class="section impact" id="impacto" aria-labelledby="impact-heading">
+        <div class="impact-copy">
+          <p class="eyebrow">Lo que consigue RateUp</p>
+          <h2 id="impact-heading">De mesas vac&iacute;as a un local lleno.</h2>
+          <p>
+            Tus clientes ya salen contentos. RateUp convierte esa experiencia en rese&ntilde;as,
+            seguidores y una carta digital m&aacute;s r&aacute;pida para que m&aacute;s gente te encuentre,
+            te siga y vuelva.
+          </p>
+        </div>
+
+        <div class="impact-layout">
+          <div class="comparison-slider" data-comparison style="--position: 54%">
+            <img
+              class="comparison-image"
+              src="assets/impact/local-lleno.jpg"
+              alt="Local lleno de clientes gracias a mas resenas, seguidores y menu digital"
+              draggable="false"
+            />
+            <div class="comparison-after">
+              <img
+                class="comparison-image"
+                src="assets/impact/local-vacio.jpg"
+                alt="Local con mesas vacias antes de mejorar la presencia online"
+                draggable="false"
+              />
+            </div>
+            <span class="comparison-label comparison-label-before">Antes</span>
+            <span class="comparison-label comparison-label-after">Despu&eacute;s</span>
+            <div class="comparison-line" aria-hidden="true">
+              <span class="comparison-handle"></span>
+            </div>
+            <input
+              class="comparison-range"
+              type="range"
+              min="0"
+              max="100"
+              value="54"
+              aria-label="Comparar local vacio y local lleno"
+            />
+          </div>
+
+          <div class="impact-benefits" aria-label="Resultados que impulsa RateUp">
+            <article>
+              <span>01</span>
+              <h3>M&aacute;s rese&ntilde;as</h3>
+              <p>El cliente satisfecho deja su opini&oacute;n justo al terminar la experiencia.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>M&aacute;s seguidores</h3>
+              <p>Las visitas reales pasan a Instagram y siguen viendo tu negocio cada semana.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Men&uacute; m&aacute;s r&aacute;pido</h3>
+              <p>Menos esperas en mesa y una experiencia m&aacute;s c&oacute;moda desde el primer toque.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section products" id="productos">
         <div class="section-heading">
           <p class="eyebrow">Productos RateUp</p>
@@ -656,5 +719,15 @@
         </div>
       </div>
     </section>
+
+    <script>
+      document.querySelectorAll("[data-comparison]").forEach((comparison) => {
+        const range = comparison.querySelector(".comparison-range");
+        const update = () => comparison.style.setProperty("--position", `${range.value}%`);
+
+        range.addEventListener("input", update);
+        update();
+      });
+    </script>
   </body>
 </html>
